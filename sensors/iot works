@@ -1,0 +1,8 @@
+First, you need to choose a PWM channel. There are 16 channels from 0 to 15.
+2) Then, you need to set the PWM signal frequency. For an LED, a frequency of 5000 
+Hz is fine to use.
+3) You also need to set the signal’s duty cycle resolution: you have resolutions from 
+1 to 16 bits. We’ll use 8-bit resolution, which means you can control the LED 
+brightness using a value from 0 to 255.
+4) Next, you need to specify to which GPIO or GPIOs the signal will appear upon. For 
+that you’ll use the following function:
